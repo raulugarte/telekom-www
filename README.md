@@ -1,9 +1,9 @@
-# SecurBank Demo Site
+# Telekom Demo Site
 Built using Next Generation Composability from AEM
 
 ## Environments
-- Preview: https://main--securbank-www--markszulc.hlx.page/
-- Live: https://www.securbankdemo.com/
+- Preview: https://main--telekom-www--raulugarte.aem.page/
+- Live: https://main--telekom-www--raulugarte.aem.live
 
 ## Installation
 
