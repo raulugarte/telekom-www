@@ -14,6 +14,10 @@
   border-radius: 8px;
 }
 
+.cards h2{
+  color: #e30174;
+}
+
 .cards .cards-card-body {
   margin: 16px;
 }
