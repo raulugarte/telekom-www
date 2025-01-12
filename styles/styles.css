@@ -149,7 +149,11 @@ a.button:any-link, button {
   font-weight: 600;
   cursor: pointer;
   color: var(--background-color);
-  background-color: var(--link-color);
+ 
+  /* RUG
+  background-color: var(--link-color); */
+ 
+  background-color: #e30174;
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;
