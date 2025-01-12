@@ -16,6 +16,8 @@
 
 .cards h2{
   color: #e30174;
+  font-size: 24px;
+    font-weight: 700;
 }
 
 .cards .cards-card-body {
