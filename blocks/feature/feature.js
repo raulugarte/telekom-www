@@ -38,7 +38,10 @@ export default async function decorate(block) {
   const placeholders = await fetchPlaceholders('');
   const { interestrate } = placeholders;
   const interest = createElement('p', { classes: 'feature-interest-rate' });
-  interest.innerHTML = `<strong>${interestrate}%</strong><sup>APR</sup>`;
+  /* RUG 
+  interest.innerHTML = `<strong>${interestrate}%</strong><sup>APR</sup>`; */
+  
+  interest.innerHTML = `<strong>${interestrate}%</strong><sup>per share</sup>`;
   callOutWrapper.appendChild(interest);
 
   contentContainer.appendChild(contentWrapper);
