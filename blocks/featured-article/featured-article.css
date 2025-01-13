@@ -50,3 +50,7 @@
     margin: 0;
     line-height: 1.75;
 }
+
+.featured-article h2 {
+    color: #e20074;
+}
