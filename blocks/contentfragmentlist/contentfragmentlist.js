@@ -68,7 +68,7 @@ async function getCategories(persistedQuery, isUE) {
 
      console.log(json); // Überprüfe die Struktur des JSON-Objekts
     
-    const items = json?.data?.BlogArticleList?.items || [];
+    const items = json?.data?.blogArticleList?.items || [];
 
     console.log(items); // Überprüfe, ob items tatsächlich leer ist
 
