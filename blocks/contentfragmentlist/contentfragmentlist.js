@@ -65,7 +65,7 @@ async function getCategories(persistedQuery, isUE) {
     }).then((response) => response.json());
     /*const items = json?.data?.categoryList?.items || [] */
     /*const items = json?.data?.offerList?.items || [] */
-    /* const items = json?.data?.blog-by-slug?.items || [] */
+    const items = json?.data?.blog-by-slug?.items || []
     const itemsrug = json?.data?.blog-by-slug?.items || []
     const test=itemsrug.toString();
 
