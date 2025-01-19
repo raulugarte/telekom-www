@@ -31,10 +31,10 @@ export default async function decorate(block) {
             <p class='detail'>${cfReq.detail.plaintext}</p>
         </div> -->
 
-        <div class='banner-detail' style="background-image: linear-gradient(90deg,rgba(0,0,0,0.6), rgba(0,0,0,0.1) 80%) ,url(${aempublishurl + cfReq.heroImage._dynamicUrl});">
-            <p class='pretitle'>${cfReq.pretitle}</p>
-            <p class='headline'>${cfReq.headline}</p>
-            <p class='detail'>${cfReq.detail.plaintext}</p>
+        <div class='banner-detail' style="background-image: linear-gradient(90deg,rgba(0,0,0,0.6), rgba(0,0,0,0.1) 80%) ,url(${aempublishurl + cfReq.image._dynamicUrl});">
+            <p class='pretitle'>${cfReq.author}</p>
+            <p class='headline'>${cfReq.title}</p>
+            <p class='detail'>${cfReq.content.plaintext}</p>
         </div>
         
         <div class='banner-logo'>
