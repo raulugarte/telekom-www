@@ -3,13 +3,15 @@ export default async function decorate(block) {
   //const aempublishurl = 'https://publish-p55117-e571178.adobeaemcloud.com';
   const aempublishurl = 'https://publish-p130407-e1279066.adobeaemcloud.com';
   //const persistedquery = '/graphql/execute.json/securbank/OfferByPath';
-  const persistedquery = '/graphql/execute.json/tlkm/blogArticleByPath';
+  const persistedquery = '/graphql/execute.json/tlkm/blogArticleList';
   //const cfpath = '/content/dam/securbank/en/offers/';
-  const cfpath = '/content/dam/tlkm/documents/en/';
+  //const cfpath = '/content/dam/tlkm/documents/en/';
   
   const offerid = block.querySelector(':scope div:nth-child(1) > div').innerHTML;
   const variationname = block.querySelector(':scope div:nth-child(2) > div').innerHTML;
-  const url = `${aempublishurl}${persistedquery};path=${cfpath}${offerid};variation=${variationname};ts=${Math.random() * 1000}`;
+  //const url = `${aempublishurl}${persistedquery};path=${cfpath}${offerid};variation=${variationname};ts=${Math.random() * 1000}`;
+  const url = `${aempublishurl}${persistedquery};slug=${offerid}`;
+
   const options = {};
 
   const cfReq = await fetch(url, options)
@@ -18,7 +20,7 @@ export default async function decorate(block) {
       let offer = '';
       if (contentfragment.data) {
         //offer = contentfragment.data.offerByPath.item;
-        offer = contentfragment.data.blogArticleByPath.item;
+        offer = contentfragment.data.blogArticleBySlug.item;
       }
       return offer;
     });
