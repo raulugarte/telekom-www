@@ -12,11 +12,9 @@ export default async function decorate(block) {
   //const url = `${aempublishurl}${persistedquery};path=${cfpath}${offerid};variation=${variationname};ts=${Math.random() * 1000}`;
   const url = `${aempublishurl}${persistedquery};slug=${offerid}`;
 
-  const options = {};
-
-  const cfReq = await fetch(url, {
-        credentials: "include"
-    },options)
+  //const options = {};
+  // const cfReq = await fetch(url,options)
+  const cfReq = await fetch(url, {credentials: "include"})
     .then((response) => response.json())
     .then((contentfragment) => {
       let offer = '';
