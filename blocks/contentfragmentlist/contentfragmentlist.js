@@ -67,7 +67,7 @@ async function getCategories(persistedQuery, isUE) {
     /*const items = json?.data?.offerList?.items || [] */
     /* const items = json?.data?.blog-by-slug?.items || [] */
     const itemsrug = json?.data?.blog-by-slug?.items || []
-    const test=1;
+    const test=itemsrug.toString();
 
     return items.map((item) => {
         /*const imageUrl = getImageUrl(item.image, isUE);*/
