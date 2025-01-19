@@ -3,7 +3,7 @@ export default async function decorate(block) {
   //const aempublishurl = 'https://publish-p55117-e571178.adobeaemcloud.com';
   const aempublishurl = 'https://publish-p130407-e1279066.adobeaemcloud.com';
   //const persistedquery = '/graphql/execute.json/securbank/OfferByPath';
-  const persistedquery = '/graphql/execute.json/tlkm/blogArticleList';
+  const persistedquery = '/graphql/execute.json/tlkm/BlogBySlug';
   //const cfpath = '/content/dam/securbank/en/offers/';
   //const cfpath = '/content/dam/tlkm/documents/en/';
   
