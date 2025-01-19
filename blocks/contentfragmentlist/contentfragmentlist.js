@@ -65,10 +65,12 @@ async function getCategories(persistedQuery, isUE) {
     }).then((response) => response.json());
     /*const items = json?.data?.categoryList?.items || [] */
     /*const items = json?.data?.offerList?.items || [] */
+
+     console.log(json); // Überprüfe die Struktur des JSON-Objekts
     
     const items = json?.data?.BlogArticleList?.items || [];
-    
 
+    console.log(items); // Überprüfe, ob items tatsächlich leer ist
 
     return items.map((item) => {
         /*const imageUrl = getImageUrl(item.image, isUE);*/
