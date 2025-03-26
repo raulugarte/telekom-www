@@ -61,6 +61,8 @@ header nav p {
 
 header nav a:any-link {
   color: currentcolor;
+  font-weight: 800;
+    font-size: larger;
 }
 
 /* hamburger */
