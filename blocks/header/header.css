@@ -242,6 +242,7 @@ header nav .nav-sections ul > li > ul > li {
     gap: 2em;
     margin: 0;
     font-size: var(--body-font-size-xs);
+            justify-content: flex-start;
   }
 
   header nav .nav-sections > ul > li {
